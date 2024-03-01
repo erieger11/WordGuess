@@ -21,6 +21,8 @@ public class Hangman {
         scan.close();
         return letter;
     }
+    //hi
+    
 
 
 
