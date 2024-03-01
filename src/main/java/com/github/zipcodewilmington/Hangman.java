@@ -1,4 +1,5 @@
 package com.github.zipcodewilmington;
+import java.util.Random;
 
 import java.util.Scanner;
 import java.sql.SQLOutput;
@@ -11,6 +12,7 @@ import java.sql.SQLOutput;
 public class Hangman {
     public static void main(String[]args){
         getWord();
+        System.out.println(WordGuess)
     }
 
     public static String getWord(){
@@ -21,14 +23,9 @@ public class Hangman {
         scan.close();
         return letter;
     }
-    //hi
-    
-
-
-
-
-
-
-
+    public static class WordGuess{
+        String[] words = new String[]{"Elephant", "Icebergs", "Mountain", " Checkout"};
+        String random = (words[new Random().nextInt(words.length)]);
+    }
 }
 //Ethan Rieger
