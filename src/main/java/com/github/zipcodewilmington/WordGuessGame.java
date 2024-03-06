@@ -27,10 +27,9 @@ public class WordGuessGame {
                 endTheGame();
             }
             selectedWord = theWord();
-            System.out.println(selectedWord);
             underscoreLine();
             guessRemaining = 10;
-            System.out.println("The word has " +selectedWord.length()+ " letters! you have 10 guesses.");
+            System.out.println("The word is animal and has " +selectedWord.length()+ " letters! you have 10 guesses.");
             System.out.println(theUserWord);
             while (guessRemaining > maxGuess) {
                 theLetterGuess();
@@ -56,7 +55,7 @@ public class WordGuessGame {
         System.out.println("You typed : " + theGuess);
     }
     public static String theWord() {
-        String[] secretWord = new String[]{"elephant", "icebergs", "mountain", "checkout", "tee"};
+        String[] secretWord = new String[]{"elephant", "lion", "giraffe", "dog", "sloth", "iguana", "tiger","rhino","chameleon","kangaroo"};
         return secretWord[new Random().nextInt(secretWord.length)];
     }
     public static void theLettersInSecretWord() {
