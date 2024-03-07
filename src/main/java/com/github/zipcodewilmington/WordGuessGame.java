@@ -86,7 +86,7 @@ public class WordGuessGame {
             System.out.println("You won!");
 
         } else if(guessRemaining == 0){
-            System.out.println("Goodbye!");
+            System.out.println("You lost... Game over!");
         }
     }
 
